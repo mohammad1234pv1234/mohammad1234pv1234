@@ -126,7 +126,7 @@ return {
     },
   moderator = {
     "filter > (word) : bot say warning to someone if they say it!",
-    "filter + (word) : if s.one say it bot kick him,
+    "filter + (word) : if s.one say it bot kick him",
     "filter - (word) : remove a filter word",
 	"!filter > (word) : bot say warning to someone if they say it!",
     "!filter + (word) : if s.one say it bot kick him",
