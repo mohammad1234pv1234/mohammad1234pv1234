@@ -291,7 +291,7 @@ function create_config( )
     Admin:
     @kingpower_admin_1
     @AH2002
-    @Erfan_hllaJ]],
+    @Erfan_hallaJ]],
     help_text_realm = [[
 Realm Commands:
 
@@ -440,7 +440,7 @@ __________________________
 ادمین :
 @kingpower_admin_1
 @AH2002
-@Erfan_hLlaJ
+@Erfan_haLlaJ
 ]],
 	help_text_super =[[
 SuperGroup Commands:
