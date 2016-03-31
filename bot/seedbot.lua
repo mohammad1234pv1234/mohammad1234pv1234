@@ -212,13 +212,60 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
+    	"addplug",
 	"admin",
+	"aparat",
+	"aparatfa",
+	"azan",
+	"azanen",
     "onservice",
     "inrealm",
     "ingroup",
     "inpm",
     "banhammer",
+    "banhammerfa",
+    "calc",
+    "clash",
+    "echo",
+    "feedback",
+    "fword",
+    "fwordfa",
     "stats",
+    "getid",
+    "googleimg",
+    "googleimgfa",
+    "googlesh",
+    "googleshfa",
+    "helpen",
+    "img2stifa",
+    "img2sti",
+    "info",
+    "insudo",
+    "isup",
+    "link_badw",
+    "linkpv",
+    "lock_english",
+    "lock_join",
+    "lock_link",
+    "lock_media",
+    "lock_share",
+    "map",
+    "mywai",
+    "mywaifa",
+    "plugins",
+    "s2a",
+    "sti2ph",
+    "sti2phfa",
+    "sudo",
+    "tag",
+    "tagall",
+    "telesticker",
+    "text",
+    "voice",
+    "weather",
+    "weatherfa",
+    "webshot",
+    "welcome",
     "anti_spam",
     "owners",
     "arabic_lock",
@@ -232,33 +279,19 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {144616352,181843952,177377373},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
-An advanced administration bot based on TG-CLI written in Lua
-
-https://github.com/SEEDTEAM/TeleSeed
-
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
-
-Our website 
-http://teleseed.seedteam.org/
-]],
+    about_text = [[KINGPOWER V2.2
+    An powerful Anti Spam Bot 
+    it is powerful of gif,xy and image changers and more spamers
+    Special Thanks To:
+    mohammad1234
+    AH2002
+    erfan
+    Admin:
+    @kingpower_admin_1
+    @AH2002
+    @Erfan_hllaJ]],
     help_text_realm = [[
 Realm Commands:
 
@@ -343,133 +376,71 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-Commands list :
 
-!kick [username|id]
-You can also do it by reply
-
-!ban [ username|id]
-You can also do it by reply
-
-!unban [id]
-You can also do it by reply
-
-!who
-Members list
-
-!modlist
-Moderators list
-
-!promote [username]
-Promote someone
-
-!demote [username]
-Demote someone
-
-!kickme
-Will kick user
-
-!about
-Group description
-
-!setphoto
-Set and locks group photo
-
-!setname [name]
-Set group name
-
-!rules
-Group rules
-
-!id
-return group id or user id
-
-!help
-Returns help text
-
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Kick user if Right To Left Char. is in name*
-
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Kick user if Right To Left Char. is in name*
-
-!mute [all|audio|gifs|photo|video]
-mute group message types
-*If "muted" message type: user is kicked if message type is posted 
-
-!unmute [all|audio|gifs|photo|video]
-Unmute group message types
-*If "unmuted" message type: user is not kicked if message type is posted 
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
-!settings
-Returns group settings
-
-!muteslist
-Returns mutes for chat
-
-!muteuser [username]
-Mute a user in chat
-*user is kicked if they talk
-*only owners can mute | mods and owners can unmute
-
-!mutelist
-Returns list of muted users in chat
-
-!newlink
-create/revoke your group link
-
-!link
-returns group link
-
-!owner
-returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!stats
-Simple message statistics
-
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-Returns group logs
-
-!banlist
-will return group ban list
-
-**You can use "#", "!", or "/" to begin all commands
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
+  لیست دستورات :
+__________________________
+بخش اونر ها:
+پاک کردن:پاکسازی مدیرها/قوانین/موضوع  
+تنزل [ریپلای،یوزرنیم]:حذف کردن کمک مدیر
+ترفیع [ریپلای،یوزرنیم]:اضافه کردن کمک مدیر
+لیست : لیست کمک مدیرها
+دعوت سودو :دعوت سودو بات به گروه
+بخش مدیریت گروه:
+اخراج [آیدی،کد،ریپلای] : شخص مورد نظر از گروه اخراج ميشود
+بن [آیدی،کد،ریپلای]:شخص مورد نظر از گروه تحریم میشود
+حذف بن[کد]:شخص مورد نظر از تحریم خارج ميشود
+لیست بن:لیست افرادی که از گروه تحریم شده اند
+قفل [اعضا|نام|ربات |تگ|عکس|خروج|فحش]
+باز کردن [اعضا|نام|ربات |تگ|عکس|خروج|فحش]
+تنظیم عکس : اضافه کردن وقفل عکس گروه
+تنظیم نام [نام]:عوض کردن نام گروه
+تنظیم قانون (متن) : تنظیم قوانین گروه
+تنظیم توضیحات(متن) : تنظیم توضیحات گروه
+تنظیمات: تنظیمات گروه
+لینک جدید : تعویض لینک و ارسال درگروه
+لینک خصوصی :ارسال در چت خصوصی 
+لینک : لینک گروه
+حساسیت[تعداد]:محدودیت تعداد اسپم
+تگ : صدا کردن افراد گروه
+فیلتر (کلمه) : فیلتر کردن کلمه هرکی کلمه رو بگه کیک می شه
+لیست فیلتر :نمایش لیست کلمات فیلتر شده
+ارسال به همه (پیام) : ارسال پیام انتخابی شما به گروه
+بخش کاربران:
+خروج : ترک گروه
+اینفو:اطلاعاتی کامل از خود یا دیگران
+امار : آمار در پیام ساده
+ایدی [یوزرنیم]:بازگرداندن کد آیدی
+صاحب : نمایش آیدی مدیر گروه
+توضیحات: درباره گروه
+قوانین: قوانین گروه
+بخش تفریح بات:
+اگر یک لینک ارسال کنید بات مستقیم در تلگرام آپلود می کند
+نقشه (مکان):نمایش موقعیت مکان مشخص شده
+من:نشان دادن مقام شما در بات
+بگو <متن> : تکرار متن
+تبدیل (متن) : تبدیل متن به عکس
+محسابه(عملیات) : محاسبه کردن عملیات ریاضی
+بگو (متن) به (شخص) : ارسال متن شما به فرد مورد انتخابی شما
+استیکر به عکس : تبدیل استیکر مورد انتخابی شما به عکس
+تبدیل (متن) : تبدیل متن مورد انتخابی شما به عکس
+جستجو (متن) : جستجو متن شما در گوگل
+جستجو عکس (متن) : جستجو. متن شما در قسمت عکس گوگل
+اوقات شرقی (شهر) : نمایش اوقات شهری شهر انتخاب شده توسط شما
+آب و هوا (شهر) : نمایش آب و هوا آن شهر
+آپارات (متن) : جستجو در آپارات
+به استیکر : تبدیل عکس به استیکر
+ارسال نظر (نظر) : ارسال نظر درباره ی بات به ادمین
+زمان (مکان) : ارسال زمان و روز آن مکان مورد انتخابی شما
+تصویر (آدرس سایت) : یک اسکرین شات کامل از سایت انتخابی شما
+صدا (متن) : تبدیل متن مورد انتخابی شما به صدا 
+—---------------------—
+نیاز نیست از '!' و '/' استفاده کنید*
+چنل:
+@kingpowerch
+ادمین :
+@kingpower_admin_1
+@AH2002
+@Erfan_hLlaJ
 ]],
 	help_text_super =[[
 SuperGroup Commands:
