@@ -1,16 +1,7 @@
---[[
-
-#
-#       @GPMod
-#   @dragon_born
-#
-
-]]
-
 local apikey = 
 'Enter Your Clash API here(لطفا API را وارد نمایید)' 
 local function run(msg, matches)
- if matches[1]:lower() == 'clan' or matches[1]:lower() == 'کلن' or  matches[1]:lower() == 'clash' or matches[1]:lower() == 'کلش' or  matches[1]:lower() == 'clantag' or matches[1]:lower() == 'شناسه کلن' or  matches[1]:lower() == 'tag' tmatches[1]:lower() == 'تگ' then
+ if matches[1]:lower() == 'clan' or matches[1]:lower() == 'کلن' or  matches[1]:lower() == 'clash' or matches[1]:lower() == 'کلش' or  matches[1]:lower() == 'clantag' or matches[1]:lower() == 'شناسه کلن' or  matches[1]:lower() == 'tag' matches[1]:lower() == 'تگ' then
   local clantag = matches[2]
   if string.match(matches[2], '^#.+$') then
      clantag = string.gsub(matches[2], '#', '')
