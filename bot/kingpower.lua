@@ -240,6 +240,7 @@ function create_config( )
     "img2stifa",
     "img2sti",
     "info",
+    "ingroupen",
     "insudo",
     "isup",
     "link_badw",
